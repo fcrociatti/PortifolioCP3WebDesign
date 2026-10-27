@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: var(--font);
+}
+
+section {
+    padding: 80px 100px;
+}
+
+header {
+    background-color: var(--dark);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+
+    nav {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+    }
+
+    .logo {
+        color: var(--primary);
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    ul li a {
+        color: var(--light);
+        font-size: 16px;
+        text-decoration: none;
+        padding: 20px 10px;
+        display: inline-block;
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: var(--primary);
+        }
+    }
+}
+
+#inicio {
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 100px 80px;
+
+    .title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        margin-bottom: 40px;
+    }
+
+    img {
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        border: 5px solid var(--primary);
+        object-fit: cover;
+    }
+}
+
+#sobre {
+    background-color: var(--secondary);
+
+    .text {
+        margin-bottom: 20px;
+    }
+
+    .sobre-itens {
+        justify-content: space-between;
+        margin-top: 40px;
+
+        li {
+            width: 30%;
+            background-color: var(--dark);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        i {
+            color: var(--primary);
+            font-size: 40px;
+        }
+
+        h3 {
+            color: var(--light);
+            font-size: 20px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .text {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+#habilidades {
+    text-align: center;
+
+    .habilidades-lista {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 240px;
+        background-color: var(--secondary);
+        border-radius: 10px;
+        padding: 30px 0;
+        transition: all 0.5s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        i {
+            color: var(--primary);
+            font-size: 50px;
+        }
+
+        p {
+            color: var(--light);
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    }
+}
+
+#projetos {
+    background-color: var(--secondary);
+
+    .projetos-lista {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .projeto {
+        width: 48%;
+        background-color: var(--dark);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+
+        img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        h3 {
+            color: var(--light);
+            font-size: 24px;
+            font-weight: 500;
+            margin: 20px 0 10px;
+        }
+
+        .text {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+#contato {
+    justify-content: space-between;
+
+    .info {
+        width: 40%;
+    }
+
+    .redes {
+        margin-top: 30px;
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: var(--light);
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.5s ease;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+
+        i {
+            color: var(--primary);
+            font-size: 24px;
+            margin-right: 10px;
+        }
+    }
+
+    form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        color: var(--light);
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        background-color: var(--secondary);
+        color: var(--light);
+        font-family: var(--font);
+        font-size: 16px;
+        border: 2px solid var(--secondary);
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+    }
+
+    ::placeholder {
+        color: #9AA3B2;
+    }
+
+    .btn {
+        width: 150px;
+    }
+}
+
+footer {
+    background-color: var(--secondary);
+    padding: 30px 0;
+    text-align: center;
+
+    .text {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Fernando Crociatti</title>
+</head>
+<body>
+
+    <header>
+        <nav class="flex">
+            <p class="logo">Fernando Crociatti</p>
+
+            <ul class="flex">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="flex">
+            <div class="info">
+                <h1 class="title">Olá, eu sou o Fernando</h1>
+                <p class="text">
+                    Analista de Implantação e estudante de Engenharia de Software na FIAP.
+                </p>
+
+                <div class="flex">
+                    <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+                    <a href="#contato" class="btn">Contato</a>
+                </div>
+            </div>
+
+            <img src="./imagens/foto.jpg" alt="Foto do Fernando">
+        </section>
+
+        <section id="sobre">
+            <h2 class="title">Sobre mim</h2>
+
+            <p class="text">
+                Sou técnico em Desenvolvimento de Sistemas e trabalho na DDS Informática
+                com implantação de sistemas ERP, WMS e TMS para empresas de logística. Também conduzo
+                as dailies e plannings da equipe.
+            </p>
+            <p class="text">
+                Fora do trabalho eu gosto de programar ferramentas que ajudam no dia a dia, como o
+                sistema de staffs da SD Eventos (FastAPI e React) e um dashboard em Python que mostra
+                o andamento das sprints do Jira.
+            </p>
+
+            <ul class="sobre-itens flex">
+                <li>
+                    <i class="bx bxs-graduation"></i>
+                    <h3>Faculdade</h3>
+                    <p class="text">Engenharia de Software - FIAP</p>
+                </li>
+                <li>
+                    <i class="bx bxs-briefcase"></i>
+                    <h3>Trabalho</h3>
+                    <p class="text">Analista de Implantação</p>
+                </li>
+                <li>
+                    <i class="bx bxs-map"></i>
+                    <h3>Cidade</h3>
+                    <p class="text">São Paulo - SP</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <h2 class="title">Habilidades</h2>
+
+            <ul class="habilidades-lista flex">
+                <li class="card">
+                    <i class="bx bxl-html5"></i>
+                    <p>HTML</p>
+                </li>
+                <li class="card">
+                    <i class="bx bxl-css3"></i>
+                    <p>CSS</p>
+                </li>
+                <li class="card">
+                    <i class="bx bxl-javascript"></i>
+                    <p>JavaScript</p>
+                </li>
+                <li class="card">
+                    <i class="bx bxl-react"></i>
+                    <p>React</p>
+                </li>
+                <li class="card">
+                    <i class="bx bxl-python"></i>
+                    <p>Python</p>
+                </li>
+                <li class="card">
+                    <i class="bx bx-data"></i>
+                    <p>SQL</p>
+                </li>
+                <li class="card">
+                    <i class="bx bxl-git"></i>
+                    <p>Git</p>
+                </li>
+                <li class="card">
+                    <i class="bx bx-task"></i>
+                    <p>Jira</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2 class="title">Projetos</h2>
+
+            <div class="projetos-lista flex">
+                <div class="projeto">
+                    <img src="./imagens/sdsite.jpg" alt="Site da SD Eventos">
+                    <h3>Site SD Eventos</h3>
+                    <p class="text">Site de uma empresa que organiza congressos médicos em São Paulo.</p>
+                    <a href="https://github.com/fcrociatti/sd-eventos" target="_blank" class="btn">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./imagens/dibarber.jpg" alt="Site de uma barbearia">
+                    <h3>Barbearia Diogo Pontes</h3>
+                    <p class="text">Landing page para a barbearia do Diogo, com serviços e agendamento.</p>
+                    <a href="https://github.com/fcrociatti/demoLandingPageDiBarber" target="_blank" class="btn">Ver no GitHub</a>
+                </div>
+
+                <div class="projeto">
+                    <img src="./imagens/cp2.jpg" alt="Site da loja Cabos do Oeste">
+                    <h3>Cabos do Oeste</h3>
+                    <p class="text">Checkpoint 2 de Front-End, feito a partir de um layout usando flexbox.</p>
+                </div>
+
+                <div class="projeto">
+                    <img src="./imagens/cp1.jpg" alt="Site com tema de praia">
+                    <h3>Checkpoint Praia</h3>
+                    <p class="text">Checkpoint 1 de Front-End, com banner, cards, galeria e contato.</p>
+                    <a href="https://github.com/fcrociatti/CP1-web" target="_blank" class="btn">Ver no GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="flex">
+            <div class="info">
+                <h2 class="title">Contato</h2>
+                <p class="text">Me mande uma mensagem ou me encontre nas redes:</p>
+
+                <ul class="redes">
+                    <li><a href="mailto:crociattifernando@gmail.com"><i class="bx bx-envelope"></i> crociattifernando@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/fernando-crociatti/" target="_blank"><i class="bx bxl-linkedin-square"></i> fernando-crociatti</a></li>
+                    <li><a href="https://github.com/fcrociatti" target="_blank"><i class="bx bxl-github"></i> fcrociatti</a></li>
+                </ul>
+            </div>
+
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem"></textarea>
+
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text">Fernando Crociatti de Toledo - RM 574258</p>
+        <p class="text">Copyright &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
